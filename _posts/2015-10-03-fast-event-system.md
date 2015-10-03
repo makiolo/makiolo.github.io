@@ -1,11 +1,57 @@
 ---
 layout: post
-title: Syntax Highlighting Post
+title: Fast Event System
 excerpt: "Demo post displaying the various ways of highlighting code in Markdown."
 tags: [sample post, code, highlighting]
 modified: 2014-09-14
 comments: true
 ---
+
+# Titulo
+
+explicación código C++
+
+{% highlight c++ %}
+int main(int, const char**)
+{
+	fes::async_fast<int, std::string, double> sync;
+
+	// test connect in context
+	{
+		fes::connection<int, std::string, double> conn(
+			sync.connect([](int n, const std::string& str, double r)
+				{
+					std::cout << "received message: " << std::endl;
+					std::cout << "n = " << n << std::endl;
+					std::cout << "str = " << str << std::endl;
+					std::cout << "r = " << r << std::endl;
+					if (str == "kill")
+					{
+						exit(1);
+					}
+				}));
+		// lambda must received this
+		sync(5, "hello world", 11.0);
+		sync.update();
+
+		// autodisconnection
+	}
+	// kill only if autodisconnection failed
+	sync(6, "kill", 12.0);
+	sync.update();
+
+	return 0;
+}
+{% endhighlight %}
+
+
+
+
+
+
+
+
+
 
 Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.[^1]
 
