@@ -10,11 +10,7 @@ This is a header-only library with some of the most common design patterns imple
 
 ## Contributing
 
-The source for design-patterns-cpp14 is held at [design-patterns-cpp14](https://github.com/makiolo/design-patterns-cpp14) github.com site.
-
-To report an issue, use the [design-patterns-cpp14 issue tracker](https://github.com/makiolo/design-patterns-cpp14/issues) at github.com.
-
-## Using design-patterns-cpp14
+The source for design-patterns-cpp14 is held at [design-patterns-cpp14](https://github.com/makiolo/design-patterns-cpp14) github.com site. To report an issue, use the [design-patterns-cpp14 issue tracker](https://github.com/makiolo/design-patterns-cpp14/issues) at github.com.
 
 ### Compile design-patterns-cpp14
 It's a header-only library. Only need an include.
