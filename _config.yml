@@ -1,9 +1,8 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Ricardo personal site
 locale:           en_US
-url:
-
+url: http://makiolo.github.io
 
 # Jekyll configuration
 
@@ -26,36 +25,37 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email:
+  name: Ricardo Marmolejo García
+  avatar: twitter.png
+  bio: "Welcome to Ricardo's personal website, I'm programmer. I like learning about technology, game development, engines, AI, software engineering ..."
+  email: makiolo@gmail.com
   disqus-shortname:
-  twitter: #username
-  facebook: #username
-  google:
-    plus: #username
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: #username
+  twitter: makiolo
+  # facebook: #username
+  # google:
+  #   plus: #username
+  #   analytics:
+  #   verify:
+  #   ad-client:
+  #   ad-slot:
+  # bing-verify:
+  github: makiolo
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
+  linkedin: ricardomarmolejogarcia
+  # xing: #username
+  # instagram: #username
+  # lastfm: #username
+  # tumblr: #username
+  # pinterest: #username
+  # foursquare: #username
+  # steam: makiolo
+  # dribbble: #username
+  # youtube: #username
+  # soundcloud: #username
+  # weibo: #username
+  # flickr: #username
+  # codepen: #username
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
