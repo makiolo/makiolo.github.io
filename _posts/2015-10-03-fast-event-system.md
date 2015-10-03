@@ -7,20 +7,15 @@ comments: true
 ---
 
 bla bla bla bla code C++.
-
 Enfatizar con: `/_sass/_pygments.scss`.
-
 Enfatizar con: [/_sass/_pygments.scss](link).
-
 Enfatizar con: */_sass/_pygments.scss*.
-
 Enfatizar con: **/_sass/_pygments.scss**.
-
 Ejemplo de Referencia[^1].
 
 [^1]: <http://en.wikipedia.org/wiki/Syntax_highlighting>
 
-```cpp
+{% highlight cpp %}
 int main(int, const char**)
 {
 	fes::async_fast<int, std::string, double> sync;
@@ -39,19 +34,22 @@ int main(int, const char**)
 						exit(1);
 					}
 				}));
-		// lambda must received this
 		sync(5, "hello world", 11.0);
 		sync.update();
-
-		// autodisconnection
 	}
-	// kill only if autodisconnection failed
 	sync(6, "kill", 12.0);
 	sync.update();
 
 	return 0;
 }
-```
+{% endhighlight %}
 
-Fin.
+> comentario
+
+# seccion 2
+
+* **elem1**: that is a asdjkhdl
+* **elem2**: that is a asdjkhdl
+* **elem3**: that is a asdjkhdl
+* **elem4**: that is a asdjkhdl
 
