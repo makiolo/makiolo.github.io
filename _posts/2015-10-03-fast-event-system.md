@@ -20,7 +20,7 @@ Ejemplo de Referencia[^1].
 
 [^1]: <http://en.wikipedia.org/wiki/Syntax_highlighting>
 
-~~~ c++
+```cpp
 int main(int, const char**)
 {
 	fes::async_fast<int, std::string, double> sync;
@@ -51,6 +51,7 @@ int main(int, const char**)
 
 	return 0;
 }
-~~~
+```
+
 Fin.
 
